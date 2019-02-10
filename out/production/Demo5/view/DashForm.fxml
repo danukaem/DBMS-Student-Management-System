@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="dashRoot" prefHeight="192.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashFormController">
+   <children>
+      <Button contentDisplay="TOP" layoutX="67.0" layoutY="53.0" mnemonicParsing="false" onAction="#register" prefHeight="87.0" prefWidth="97.0" text="Register">
+         <graphic>
+            <ImageView depthTest="DISABLE" fitHeight="47.0" fitWidth="63.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Register.png" />
+               </image></ImageView>
+         </graphic></Button>
+      <Button contentDisplay="TOP" layoutX="190.0" layoutY="53.0" mnemonicParsing="false" onAction="#course" prefHeight="87.0" prefWidth="97.0" text="Course">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Course.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button contentDisplay="TOP" layoutX="312.0" layoutY="53.0" mnemonicParsing="false" onAction="#batch" prefHeight="87.0" prefWidth="97.0" text="Batch">
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Batch.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button contentDisplay="TOP" layoutX="438.0" layoutY="53.0" mnemonicParsing="false" onAction="#manageStudent" prefHeight="90.0" prefWidth="97.0" text="Manage Student" textAlignment="CENTER" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="61.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/ManageStudent.png" />
+               </image></ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

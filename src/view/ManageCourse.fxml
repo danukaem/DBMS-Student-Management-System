@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="courseRoot" prefHeight="437.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageCourseController">
+   <children>
+      <ImageView fitHeight="243.0" fitWidth="600.0" layoutX="-1.0" layoutY="39.0" opacity="0.23" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/g1.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="442.0" layoutY="24.0" mnemonicParsing="false" onAction="#homePage" prefHeight="50.0" prefWidth="128.0" text="Home">
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Home.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="37.0" layoutY="94.0" text="Course ID" />
+      <Label layoutX="37.0" layoutY="127.0" text="Course Name" />
+      <Label layoutX="37.0" layoutY="159.0" text="Course Description" />
+      <Label layoutX="37.0" layoutY="191.0" text="Course Duration" />
+      <TextField fx:id="txtCourseName" layoutX="226.0" layoutY="123.0" prefHeight="25.0" prefWidth="247.0" />
+      <TextField fx:id="txtCourseDiscription" layoutX="226.0" layoutY="155.0" prefHeight="25.0" prefWidth="247.0" />
+      <TextField fx:id="txtCourseDuration" layoutX="226.0" layoutY="187.0" prefHeight="25.0" prefWidth="247.0" />
+      <TableView fx:id="tblCourseDetails" layoutX="28.0" layoutY="257.0" onMouseClicked="#selectingTableRaw" prefHeight="163.0" prefWidth="549.0">
+        <columns>
+          <TableColumn prefWidth="70.0" text="Course ID" />
+          <TableColumn prefWidth="126.0" text="Course Name" />
+            <TableColumn prefWidth="271.0" text="Course Description" />
+            <TableColumn prefWidth="78.0" text="Course Duration" />
+        </columns>
+      </TableView>
+      <Button layoutX="324.0" layoutY="225.0" mnemonicParsing="false" onAction="#saveCourse" prefHeight="25.0" prefWidth="87.0" text="Save" />
+      <Button layoutX="441.0" layoutY="225.0" mnemonicParsing="false" onAction="#deleteCourse" prefHeight="25.0" prefWidth="87.0" text="Delete" />
+      <TextField fx:id="txtCourseID" layoutX="226.0" layoutY="90.0" prefHeight="25.0" prefWidth="247.0" />
+      <Button layoutX="33.0" layoutY="24.0" mnemonicParsing="false" onAction="#newCourse" prefHeight="54.0" prefWidth="128.0" text="New Course">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/new%20Register.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="17.0" fitWidth="26.0" layoutX="331.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Save.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="25.0" layoutX="447.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Delete.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="214.0" layoutY="31.0" style="-fx-background-color: #7654;" text="Manage Course">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

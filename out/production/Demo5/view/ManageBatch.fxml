@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="batchRoot" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageBatchController">
+   <children>
+      <Button layoutX="494.0" layoutY="31.0" mnemonicParsing="false" onAction="#homePage" text="Home Page" />
+      <Label layoutX="62.0" layoutY="74.0" text="Course" />
+      <Label layoutX="62.0" layoutY="102.0" text="Batch ID" />
+      <ComboBox fx:id="cmbCourse" layoutX="207.0" layoutY="70.0" onMouseClicked="#selectCourse" prefWidth="150.0" />
+      <TextField fx:id="txtBatchId" layoutX="207.0" layoutY="98.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="txtbatchDescription" layoutX="208.0" layoutY="154.0" />
+      <TextField fx:id="txtBatchCapacity" layoutX="208.0" layoutY="182.0" />
+      <Label layoutX="62.0" layoutY="130.0" text="Batch Starting Date" />
+      <Label layoutX="62.0" layoutY="158.0" text="Batch Description" />
+      <Label layoutX="62.0" layoutY="186.0" text="Batch Capcity" />
+      <Button layoutX="62.0" layoutY="31.0" mnemonicParsing="false" onAction="#newBatch" text="New Batch" />
+      <Button fx:id="btnsaveBatch" layoutX="427.0" layoutY="115.0" mnemonicParsing="false" onAction="#saveBatch" prefHeight="25.0" prefWidth="55.0" text="Save" />
+      <Button fx:id="btnupdatebatch" layoutX="427.0" layoutY="149.0" mnemonicParsing="false" onAction="#updateBatch" text="Update" />
+      <Button fx:id="btndeleteBatch" layoutX="427.0" layoutY="182.0" mnemonicParsing="false" onAction="#deleteBatch" prefHeight="25.0" prefWidth="55.0" text="Delete" />
+      <TableView fx:id="tblBatchdata" layoutX="18.0" layoutY="222.0" onMouseClicked="#selectBatch" prefHeight="153.0" prefWidth="566.0">
+        <columns>
+          <TableColumn prefWidth="140.0" text="Course" />
+          <TableColumn prefWidth="69.0" text="Batch ID" />
+            <TableColumn prefWidth="78.0" text="Batch Starting Date" />
+            <TableColumn prefWidth="203.0" text="Batch Description" />
+            <TableColumn prefWidth="75.0" text="Batch Capcity" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="txtBatchStartDate" layoutX="207.0" layoutY="126.0" prefHeight="25.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
